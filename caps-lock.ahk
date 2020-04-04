@@ -3,6 +3,9 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+; Replace CapsLock with Escape, if pressed, or Ctrl, if held
+; Credit: https://www.dannyguo.com/blog/remap-caps-lock-to-escape-and-control/
+
 *CapsLock::
     Send {Blind}{Ctrl Down}
     cDown := A_TickCount
